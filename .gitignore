@@ -1,0 +1,18 @@
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Deno
+deno.lock
+deno_modules/
+
+# Fresh build files
+fresh.gen.ts
+_fresh/
+
+# Node modules (if using npm dependencies)
+node_modules/
+package-lock.json
