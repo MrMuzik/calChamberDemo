@@ -1,6 +1,17 @@
 export default function Header() {
   return (
     <header>
+        <div class="bg-black text-white">
+            <div class="container mx-auto px-4 py-1">
+                <div class="flex bg-black text-white justify-between">
+                    <img src="/CalChmaber_Icon.svg" alt="CalChamber Icon" class="w-6" />
+                    <a href="#">
+                        <i class="fas fa-globe"></i>
+                        <i class="fas fa-caret-down pl-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
       <div class="bg-calchamber-blue text-white py-2">
         <div class="container mx-auto px-4 flex items-center justify-between">
           <a class="text-2xl font-serif text-white" href="#">

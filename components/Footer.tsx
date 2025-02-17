@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer>
       {/* Column Section */}
-      <div class="bg-calchamber-blue-medium text-white py-8">
+      <div class="bg-calchamber-blue-medium text-white py-8 mt-8">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-4">
           <div>
             <h3 class="font-bold mb-4 text-white">Popular</h3>

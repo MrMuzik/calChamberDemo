@@ -5,8 +5,8 @@ export default function Tabs() {
 
   return (
     <div>
-      <div class="border-b border-gray-300">
-        {["description", "auto-ship", "specifications"].map((tab) => (
+      <div class="border-b border-gray-300 text-center">
+        {["description", "compliance", "specifications", "reviews"].map((tab) => (
           <button
             key={tab}
             class={`text-sm font-semibold px-4 py-2 ${
@@ -20,8 +20,9 @@ export default function Tabs() {
       </div>
       <div class="mt-4 text-gray-700">
         {activeTab === "description" && <p>This is the product description.</p>}
-        {activeTab === "auto-ship" && <p>Auto-ship details and benefits.</p>}
+        {activeTab === "compliance" && <p>Auto-ship details and benefits.</p>}
         {activeTab === "specifications" && <p>Technical details of the product.</p>}
+        {activeTab === "reviews" && <p>Reviews of the product.</p>}
       </div>
     </div>
   );
