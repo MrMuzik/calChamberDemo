@@ -1,15 +1,12 @@
 import Header from "../components/Header.tsx";
-import Footer from "../components/Footer.tsx";
 import Tabs from "../islands/Tabs.tsx";
-
+import Promo from "../components/Promo.tsx";
 export default function Home() {
   return (
     <div class="bg-gray-50">
       <Header />
-      <div class="bg-green-100 py-2 text-center text-green-800">
-        Preferred or higher level members save up to 20% year-round on products and training.
-      </div>
       <main class="container mx-auto mt-8 px-4">
+        <Promo />
         <div class="flex">
           <div class="w-1/3">
             <img
@@ -25,7 +22,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

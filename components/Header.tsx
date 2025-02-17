@@ -3,10 +3,10 @@ export default function Header() {
     <header>
       <div class="bg-calchamber-blue text-white py-2">
         <div class="container mx-auto px-4 flex items-center justify-between">
-          <a class="text-2xl font-bold" href="#">
-            <span class="text-white">Cal</span>
-            <span class="text-calchamber-blue bg-white px-1">Chamber</span>
-            <span class="text-white"> Store</span>
+          <a class="text-2xl font-serif text-white" href="#">
+            <span class="font-bold">Cal</span>
+            <span class="text-calchamber-blue-light">Chamber</span>
+            &nbsp;Store
           </a>
           <div class="flex-grow mx-8">
             <div class="relative max-w-md mx-auto">
@@ -16,13 +16,13 @@ export default function Header() {
                 type="text"
               />
               <button class="absolute right-0 top-0 h-full px-4 bg-orange-500 text-white rounded-r-md hover:bg-orange-600">
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search text-calchamber-blue"></i>
               </button>
             </div>
           </div>
           <div class="flex items-center">
             <a class="text-sm hover:text-gray-200 flex flex-col items-center" href="#">
-              <i class="fas fa-user"></i>
+              <i class="far fa-user"></i>
               Account
             </a>
             <a class="text-sm hover:text-gray-200 ml-4 flex flex-col items-center" href="#">
