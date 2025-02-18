@@ -1,11 +1,11 @@
-export default function ProductImage() {
-    return (
-      <img
-        alt="San Francisco Labor Law Posters 4-Poster set"
-        class=""
-        src="/san-francisco-labor-law-posters-4-poster-set.webp"
-        width="100%"
-      />
-    );
-  }
+interface ProductImageProps {
+    imageUrl: string;
+    altText: string;
+    className?: string;
+}
+  
+export default function ProductImage({ imageUrl, altText, className }: ProductImageProps) {
+    return <img alt={altText} class={className} src={imageUrl} width="100%" />;
+}
+  
   

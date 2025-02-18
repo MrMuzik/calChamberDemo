@@ -1,11 +1,26 @@
 import { useState } from "preact/hooks";
 
-export default function Tabs() {
+interface TabsProps {
+  description: string;
+  compliance: string;
+  specifications: string;
+  reviews: string;
+}
+
+export default function Tabs({ description, compliance, specifications, reviews }: TabsProps) {
   const [activeTab, setActiveTab] = useState("description");
 
+  const getTabContent = () => {
+    if (activeTab === "description") return description;
+    if (activeTab === "compliance") return compliance;
+    if (activeTab === "specifications") return specifications;
+    if (activeTab === "reviews") return reviews;
+    return "";
+  };
+
   return (
-    <div>
-      <div class="border-b border-gray-300 text-center">
+    <>
+      <div class="border-b border-gray-300 flex">
         {["description", "compliance", "specifications", "reviews"].map((tab) => (
           <button
             key={tab}
@@ -18,12 +33,9 @@ export default function Tabs() {
           </button>
         ))}
       </div>
-      <div class="mt-4 text-gray-700">
-        {activeTab === "description" && <p>This is the product description.</p>}
-        {activeTab === "compliance" && <p>Auto-ship details and benefits.</p>}
-        {activeTab === "specifications" && <p>Technical details of the product.</p>}
-        {activeTab === "reviews" && <p>Reviews of the product.</p>}
-      </div>
-    </div>
+
+      {/* ✅ Render raw HTML safely */}
+      <div class="mt-4 text-gray-700 text-base max-w-prose" dangerouslySetInnerHTML={{ __html: getTabContent() }} />
+    </>
   );
 }
