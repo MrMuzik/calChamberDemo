@@ -7,6 +7,9 @@ import * as $_app from "./routes/_app.tsx";
 import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
+import * as $product_double from "./routes/product/double.tsx";
+import * as $product_single from "./routes/product/single.tsx";
+import * as $product_triple from "./routes/product/triple.tsx";
 import * as $Modal from "./islands/Modal.tsx";
 import * as $Product from "./islands/Product.tsx";
 import * as $Tabs from "./islands/Tabs.tsx";
@@ -19,6 +22,9 @@ const manifest = {
     "./routes/api/joke.ts": $api_joke,
     "./routes/greet/[name].tsx": $greet_name_,
     "./routes/index.tsx": $index,
+    "./routes/product/double.tsx": $product_double,
+    "./routes/product/single.tsx": $product_single,
+    "./routes/product/triple.tsx": $product_triple,
   },
   islands: {
     "./islands/Modal.tsx": $Modal,

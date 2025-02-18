@@ -39,10 +39,10 @@ export default function Modal({ isOpen, onClose }: ModalProps) {
 
         {/* Modal Content */}
         <h2 class="text-lg font-bold text-calchamber-blue mb-4">Find Your Required Posters</h2>
-        <p><strong>For employers with 1-4 employees:</strong><br />San Francisco Labor Law Notice Poster</p>
-        <p class="mt-2"><strong>For employers with 5-19 employees:</strong><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice</p>
-        <p class="mt-2"><strong>For employers with 20+ employees:</strong><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice<br />San Francisco Workplace Ordinances Poster</p>
-        <p class="mt-2"><strong>For employers with 100+ employees:</strong><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice<br />San Francisco Workplace Ordinances Poster<br />San Francisco Public Health Emergency & Military Leave Notices Poster</p>
+        <p><a href="/product/single" class="text-link-blue"><strong>For employers with 1-4 employees:</strong></a><br />San Francisco Labor Law Notice Poster</p>
+        <p class="mt-2"><a href="/product/double" class="text-link-blue"><strong>For employers with 5-19 employees:</strong></a><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice</p>
+        <p class="mt-2"><a href="/product/triple" class="text-link-blue"><strong>For employers with 20+ employees:</strong></a><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice<br />San Francisco Workplace Ordinances Poster</p>
+        <p class="mt-2"><a href="/" class="text-link-blue"><strong>For employers with 100+ employees:</strong></a><br />San Francisco Labor Law Notice Poster<br />San Francisco Fair Chance Notice<br />San Francisco Workplace Ordinances Poster<br />San Francisco Public Health Emergency & Military Leave Notices Poster</p>
         <p class="mt-2"><strong>For chain stores (formula retailers) with 40+ locations and 20+ employees:</strong><br />San Francisco Formula Retail Employee Rights Ordinance Poster</p>
         <p class="mt-4">Need help choosing? Our compliance experts are here to assist! <a href="#" class="text-link-blue">Chat Now</a> or Call <strong>(800) 331-8877</strong>.</p>
       </div>
