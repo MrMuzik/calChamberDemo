@@ -48,7 +48,7 @@ export default function Footer() {
       {/* Copyright Section */}
       <div class="bg-calchamber-blue text-white text-center py-4 w-full">
         <p class="text-sm">
-          © 2024 CalChamber Store | 
+          © 2025 CalChamber Store | 
           <a class="text-link-blue-light hover:text-gray-200 ml-1" href="#">Terms and Conditions</a>,
           <a class="text-link-blue-light hover:text-gray-200 ml-1" href="#">Terms of Use</a>,
           <a class="text-link-blue-light hover:text-gray-200 ml-1" href="#">About Our Ads</a>,
