@@ -1,10 +1,14 @@
+import { useEffect, useState } from "preact/hooks";
 import { ComponentChildren } from "preact";
+
 import ProductImage from "../components/ProductImage.tsx";
 import ProductBreadcrumb from "../components/ProductBreadcrumb.tsx";
 import ProductInfo from "../components/ProductInfo.tsx";
 import ProductRating from "../components/ProductRating.tsx";
 import ProductPricing from "../components/ProductPricing.tsx";
+
 import Tabs from "./Tabs.tsx";
+import Modal from "./Modal.tsx";
 
 interface ProductProps {
   title: string;
@@ -17,6 +21,14 @@ interface ProductProps {
 }
 
 export default function Product({ title, imageUrl, breadcrumb, price, sku, summary, tabs }: ProductProps) {
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    useEffect(() => {
+      const handleOpenModal = () => setModalOpen(true);
+      globalThis.addEventListener("open-modal", handleOpenModal);
+      return () => globalThis.removeEventListener("open-modal", handleOpenModal);
+    }, []);
+    
     return (
     <div class="container mx-auto my-8 px-4">
       <div class="flex">
@@ -32,7 +44,11 @@ export default function Product({ title, imageUrl, breadcrumb, price, sku, summa
           <ProductPricing price={price} />
         </div>
       </div>
-      <Tabs description={tabs.description} compliance={tabs.compliance} specifications={tabs.specifications} reviews={tabs.reviews} />
+      <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+      <Tabs description={tabs.description.replace(
+          `<a href="#" class="text-link-blue">Use this guide</a>`,
+          `<button class="text-link-blue underline" onclick="window.dispatchEvent(new CustomEvent('open-modal'))">Use this guide</button>`
+        )} compliance={tabs.compliance} specifications={tabs.specifications} reviews={tabs.reviews} />
     </div>
   );
 }
