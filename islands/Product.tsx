@@ -1,5 +1,4 @@
 import { useEffect, useState } from "preact/hooks";
-import { ComponentChildren } from "preact";
 
 import ProductImage from "../components/ProductImage.tsx";
 import ProductBreadcrumb from "../components/ProductBreadcrumb.tsx";
@@ -16,7 +15,7 @@ interface ProductProps {
   breadcrumb: string;
   price: string;
   sku: string;
-  summary: ComponentChildren;
+  summary: Record<string, string>;
   tabs: Record<string, string>; 
 }
 
@@ -28,7 +27,7 @@ export default function Product({ title, imageUrl, breadcrumb, price, sku, summa
       globalThis.addEventListener("open-modal", handleOpenModal);
       return () => globalThis.removeEventListener("open-modal", handleOpenModal);
     }, []);
-    
+
     return (
     <div class="container mx-auto my-8 px-4">
       <div class="flex">
@@ -37,7 +36,7 @@ export default function Product({ title, imageUrl, breadcrumb, price, sku, summa
         </div>
         <div class="w-1/3 pl-8">
           <ProductBreadcrumb breadcrumb={breadcrumb} />
-          <ProductInfo title={title} summary={summary} sku={sku} />
+          <ProductInfo title={title} summary={summary.summary} sku={sku} />
           <ProductRating />
         </div>
         <div class="w-1/3 pl-8">

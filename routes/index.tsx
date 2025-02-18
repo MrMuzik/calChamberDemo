@@ -2,11 +2,11 @@ import Header from "../components/Header.tsx";
 import Product from "../islands/Product.tsx";
 import Promo from "../components/Promo.tsx";
 
-const Summary = () => (
-  <>
+const summary = {
+  summary: `
     Stay on top of San Francisco's labor law posting requirements with this 4-poster set,&nbsp;<strong>designed for businesses with 100+ employees</strong>.&nbsp;Featuring mandatory workplace notices in multiple languages.
-  </>
-);
+  `
+};
 
 const productTabs = {
   description: `
@@ -94,7 +94,7 @@ export default function Home() {
           breadcrumb="San Francisco Labor Law 4-Poster Set"
           price="$56.99"
           sku="PSFLK4"
-          summary={<Summary />}
+          summary={summary}
           tabs={productTabs}
        />
       </main>
