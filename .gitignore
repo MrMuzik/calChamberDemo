@@ -10,7 +10,6 @@ deno.lock
 deno_modules/
 
 # Fresh build files
-fresh.gen.ts
 _fresh/
 
 # Node modules (if using npm dependencies)
