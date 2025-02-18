@@ -6,7 +6,7 @@
     "manifest": "deno task cli manifest $(pwd)",
     "tailwind": "tailwindcss -c tailwind.config.js -o static/styles.css --watch",
     "start": "deno run -A --watch=static/,routes/ dev.ts",
-    "build": "deno run -A tailwind.config.ts",
+    "build": "deno run -A dev.ts build",
     "predeploy": "deno run -A build.ts",
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
