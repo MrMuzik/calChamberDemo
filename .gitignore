@@ -15,5 +15,5 @@ _fresh/
 # Node modules (if using npm dependencies)
 node_modules/
 package-lock.json
-
+.DS_Store
 static/.DS_Store
