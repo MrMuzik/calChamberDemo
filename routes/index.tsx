@@ -12,27 +12,33 @@ const productTabs = {
   description: `
     <p>San Francisco businesses must display labor law notices based on company size. <a href="#" class="text-link-blue">Use this guide</a> to find the right poster set.</p>
     <p class="mt-4"><strong>Included:</strong><br />
-        <ul class="list-disc list-outside ml-8 space-y-2">
-            <li>San Francisco Labor Law Notice Poster (26" x 22") - Covers Minimum Wage, Paid Sick Leave, and Salary History Ordinances for all employers with employees working in San Francisco. 
-            (Languages: English, Spanish, Chinese, Vietnamese, Russian, Tagalog)</li>
-            <li>San Francisco Fair Chance Notice (17" x 17") - Required for employers with 5+ employees, covering fair hiring practices. 
-            (Languages: English, Spanish, Chinese, Tagalog)</li>
-            <li>San Francisco Workplace Ordinances Poster (35" x 24") - Includes notices for Family Friendly Workplace, Health Care Security, and Paid Parental Leave Ordinances for businesses with 20+ employees. 
-            (Languages: English, Spanish, Chinese, Tagalog)</li>
-            <li>San Francisco Public Health Emergency & Military Leave Notices Poster (36.5" x 23") - Covers Public Health Emergency Leave & Military Leave Pay Protection Act, required for businesses with 100+ employees. 
-            (Languages: English, Spanish, Chinese, Tagalog)</li>
-        </ul>
-    </p>
-    <p class="mt-4"><strong>Auto-Ship: Compliance Made Easier</strong></p>
-    <p>Put your labor law poster ordering on auto-pilot. Auto-Ship automatically delivers next year's updated posters, so you don't have to think about it.</p>
-    <ul class="list-disc list-outside ml-8 space-y-2 mt-4">
-        <li>Stay ahead - get the latest required posters every year, hassle-free.</li>
-        <li>No reordering - we handle it for you, so it's one less task on your list.</li>
-        <li>Flexible & worry-free - we'll remind you before shipping, and you can update or cancel anytime.</li>
+    <p class="mt-4"><strong>San Francisco Labor Law Notice Poster (26" x 22")</strong><br />Covers Minimum Wage, Paid Sick Leave, and Salary History Ordinances for all employers with employees working in San Francisco.</p>
+    <ul class="list-disc list-outside ml-8">
+      <li>Languages: English, Spanish, Chinese, Vietnamese, Russian, Tagalog</li>  
     </ul>
-    <p class="mt-4">Like a personal assistant for compliance—so you can focus on running your business.</p>
-    <p class="mt-4">Learn more about <a href="#" class="text-link-blue">Auto-Ship</a></p>
-  `,
+    <p class="mt-4"><strong>San Francisco Fair Chance Notice (17" x 17")</strong><br />Required for employers with 5+ employees, covering fair hiring practices.</p>
+    <ul class="list-disc list-outside ml-8">
+      <li>Languages: English, Spanish, Chinese, Tagalog</li>
+    </ul>
+    <p class="mt-4"><strong>San Francisco Workplace Ordinances Poster (35" x 24")</strong><br />Includes notices for Family Friendly Workplace, Health Care Security, and Paid Parental Leave Ordinances for businesses with 20+ employees.</p>
+    <ul class="list-disc list-outside ml-8">
+      <li>Languages: English, Spanish, Chinese, Tagalog</li>
+    </ul>
+    <p class="mt-4"><strong>San Francisco Public Health Emergency & Military Leave Notices Poster (36.5" x 23")</strong><br />Covers Public Health Emergency Leave & Military Leave Pay Protection Act, required for businesses with 100+ employees.</p>
+    <ul class="list-disc list-outside ml-8">
+      <li>Languages: English, Spanish, Chinese, Tagalog</li>
+    </ul>
+    <div class="mt-8 py-4 px-8 bg-calchamber-orange rounded-lg">
+      <p><strong>Auto-Ship: Compliance Made Easier</strong></p>
+      <p>Put your labor law poster ordering on auto-pilot. Auto-Ship automatically delivers next year's updated posters, so you don't have to think about it.</p>
+      <ul class="list-disc list-outside ml-8 space-y-2 mt-4">
+          <li>Stay ahead - get the latest required posters every year, hassle-free.</li>
+          <li>No reordering - we handle it for you, so it's one less task on your list.</li>
+          <li>Flexible & worry-free - we'll remind you before shipping, and you can update or cancel anytime.</li>
+      </ul>
+      <p class="mt-4">Like a personal assistant for compliance—so you can focus on running your business.</p>
+    </div>
+    `,
   compliance: `
     <p class="text-calchamber-red"><strong>Important: Failure to meet San Francisco posting requirements and local employment laws may result in citations, penalties, or legal action.</strong></p> 
     <p class="mt-4"><strong>San Francisco Requirements:</strong></p>
@@ -46,8 +52,34 @@ const productTabs = {
         <li>If you've previously purchased a single San Francisco Labor Law Poster (1 to 4 employees) or poster sets prior to May 2024 from CalChamber, you'll need to purchase the current San Francisco Labor Law Notice Poster (Item PSFL), which reflects the updated minimum wage notice, as described above.</li>
     </ul>
   `,
-  specifications: `<p>Technical details of the product.</p>`,
-  reviews: `<p>Customer reviews and ratings.</p>`,
+  specifications: `
+    <div class="w-full grid grid-cols-2 text-sm">
+      <div class="p-3 font-bold bg-gray-200">STATE</div>
+      <div class="p-3 bg-gray-200">CA</div>
+
+      <div class="p-3 font-bold bg-white">LANGUAGE PREFERENCE</div>
+      <div class="p-3 bg-white">MULTI-LANGUAGE</div>
+
+      <div class="p-3 font-bold bg-gray-200">FINISH</div>
+      <div class="p-3 bg-gray-200">LAMINATE</div>
+
+      <div class="p-3 font-bold bg-white">MANDATORY</div>
+      <div class="p-3 bg-white">YES</div>
+
+      <div class="p-3 font-bold bg-gray-200">POSTER PROTECT</div>
+      <div class="p-3 bg-gray-200">NO</div>
+
+      <div class="p-3 font-bold bg-white">DIGITAL</div>
+      <div class="p-3 bg-white">NO</div>
+
+      <div class="p-3 font-bold bg-gray-200">LOCALE</div>
+      <div class="p-3 bg-gray-200">SAN FRANCISCO</div>
+
+      <div class="p-3 font-bold bg-white">EMPLOYEE COUNT</div>
+      <div class="p-3 bg-white">100+</div>
+    </div>
+  `,
+  reviews: `<p>Reviews (0) - Be the First to Share Your Experience!</p>`,
 };
 
 export default function Home() {

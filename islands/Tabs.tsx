@@ -20,7 +20,7 @@ export default function Tabs({ description, compliance, specifications, reviews 
 
   return (
     <>
-      <div class="border-b border-gray-300 flex">
+      <div class="flex mt-8 border-b border-gray-300">
         {["description", "compliance", "specifications", "reviews"].map((tab) => (
           <button
             key={tab}
